@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent">
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<LinearLayout
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="vertical"
@@ -13,10 +13,45 @@
     <TextView
         android:id="@+id/nameText"
         android:layout_width="wrap_content"
-        android:layout_height="69dp"
+        android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
         android:text="Cụt Xuân Quyền"
         android:textSize="30dp" />
+
+    <EditText
+        android:id="@+id/nickName_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/your_nick_name"
+        android:inputType="textPersonName"
+        android:text=""
+        android:textAlignment="center"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btnDone"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/cardview_compat_inset_shadow"
+        android:fontFamily="@font/roboto_medium"
+        android:text="@string/btnDone"
+        android:onClick="clickHandlerFunction"/>
+
+    <TextView
+        android:id="@+id/nickName_txt"
+        style="@style/Widget.AppCompat.TextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorAccent"
+        android:paddingBottom="@dimen/cardview_compat_inset_shadow"
+        android:visibility="gone"
+        android:text=""
+        android:textSize="20dp"
+        android:textAlignment="center" />
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -56,6 +91,8 @@
         android:textSize="25dp"
         android:text="My goal is to become a website design programmer so that when I graduate, I want to return to my hometown to start a business with my own career. "
         />
+
+
 
 
 </LinearLayout>
